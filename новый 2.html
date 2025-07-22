@@ -1,0 +1,103 @@
+<html>
+<head>
+<title> Строительство зданий под ключ по всей России </title>
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<link rel="stylesheet" href="styles.css" />
+
+</head>
+
+<body background="fon1.jpg" style="background-size: 100% 100%;">
+<div> 
+<p id = "nazvan">TreBriCon</p>
+<p id = "shapka">Сооружение гражданской инфраструктуры <br> в короткие сроки и на высоком уровне <br> по всей России</p>
+
+
+<div id = "zak"> 
+    <a href="#" class="text" onclick="openModal()">Оформить заявку</a>
+</div>
+
+<div class="rr">
+<a href="">
+    <img src='dom1.jpg'  style="position: absolute; left: 430px; height: 400px; width: 400px">
+</a>
+<a href="">
+    <img src='ban1.jpg'  style="position: absolute; left: 910px; height: 400px; width: 400px">
+</a>
+<a href="">
+    <img src='bas1.png'  style="position: absolute; left: 1400px; height: 400px; width: 400px">
+</a>
+<a href="">
+    <img src='sar1.jpg'  style="position: absolute; top: 650px; left: 430px; height: 400px; width: 400px">
+</a>
+<a href="">
+    <img src='gar1.jpg'  style="position: absolute; top: 650px; left: 1400px; height: 400px; width: 400px">
+</a>
+<a href="">
+    <img src='tep1.jpeg'  style="position: absolute; top: 650px; left: 910px; height: 400px; width: 400px">
+</a>
+</div>
+
+<!-- Модальное окно формы -->
+<div id="requestModal" class="modal">
+  <div class="modal-content">
+    <span class="close" onclick="closeModal()">&times;</span>
+    <h2>Форма заявки</h2>
+    <form>
+      <div class="form-group">
+        <label for="name">Ваше имя:</label>
+        <input type="text" id="name" name="name" required>
+      </div>
+      
+      <div class="form-group">
+        <label for="phone">Телефон:</label>
+        <input type="tel" id="phone" name="phone" required>
+      </div>
+      
+      <div class="form-group">
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email">
+      </div>
+      
+      <div class="form-group">
+        <label for="service">Тип услуги:</label>
+        <select id="service" name="service">
+          <option value="dom">Строительство дома</option>
+          <option value="banya">Баня/сауна</option>
+          <option value="bas">Бассейн</option>
+          <option value="sarai">Хозяйственная постройка</option>
+          <option value="garazh">Гараж</option>
+          <option value="teplica">Теплица</option>
+        </select>
+      </div>
+      
+      <div class="form-group">
+        <label for="message">Дополнительная информация:</label>
+        <textarea id="message" name="message" rows="4"></textarea>
+      </div>
+      
+      <button type="submit" class="submit-btn">Отправить заявку</button>
+    </form>
+  </div>
+</div>
+
+<script>
+// Открытие модального окна
+function openModal() {
+  document.getElementById('requestModal').style.display = 'block';
+}
+
+// Закрытие модального окна
+function closeModal() {
+  document.getElementById('requestModal').style.display = 'none';
+}
+
+// Закрытие при клике вне окна
+window.onclick = function(event) {
+  if (event.target == document.getElementById('requestModal')) {
+    closeModal();
+  }
+}
+</script>
+
+</body>
+</html>

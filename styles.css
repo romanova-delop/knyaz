@@ -1,0 +1,280 @@
+
+#nazvan{
+font-size: 40pt;
+margin: 20 20;
+background: orange;
+}
+#shapka{
+font-size: 14pt;
+margin: 20 20;
+}
+#niz{
+font-size: 10pt;
+margin: 20 20;
+background: gray
+}
+#levo{
+margin: 20 20;
+}
+#zak{
+position: absolute;
+right: 40px;
+top: 100px;
+font-size: 20pt;
+background: brown;
+color: white;
+border-radius: 10px;
+box-shadow: 0 5px 15px rgba(0,0,0, 0.2);
+}
+.text {
+  text-decoration: none;
+  color: white;
+}
+.rr img{
+	border-radius: 10px;
+	box-shadow: 0 5px 15px rgba(0,0,0, 0.2);
+}
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Arial', sans-serif;
+        }
+        
+        body {
+            background: url('fon1.jpg') no-repeat center center fixed;
+            background-size: cover;
+            color: white;
+            line-height: 1.6;
+        }
+        
+        #nazvan {
+            font-size: 48px;
+            font-weight: bold;
+            color: #fff;
+            text-align: center;
+            margin-top: 30px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+        }
+        
+        #shapka {
+            font-size: 24px;
+            text-align: center;
+            margin: 20px 0 40px;
+            text-shadow: 1px 1px 3px rgba(0,0,0,0.5);
+        }
+        
+        #zak {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+        
+        .text {
+            display: inline-block;
+            background: #e74c3c;
+            color: white;
+            padding: 15px 30px;
+            border-radius: 5px;
+            text-decoration: none;
+            font-size: 18px;
+            font-weight: bold;
+            transition: background 0.3s;
+        }
+        
+        .text:hover {
+            background: #c0392b;
+        }
+        
+        .rr {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 30px;
+            padding: 0 20px;
+            margin-bottom: 50px;
+        }
+        
+        .rr a {
+            position: relative;
+            display: block;
+            width: 400px;
+            height: 400px;
+            overflow: hidden;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+            transition: transform 0.3s;
+        }
+        
+        .rr a:hover {
+            transform: scale(1.05);
+        }
+        
+        .rr img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.5s;
+        }
+        
+        .rr a:hover img {
+            transform: scale(1.1);
+        }
+        
+        /* Добавим подписи к изображениям */
+        .rr a::after {
+            content: attr(data-title);
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: rgba(0,0,0,0.7);
+            color: white;
+            padding: 15px;
+            text-align: center;
+            font-size: 20px;
+            transform: translateY(100%);
+            transition: transform 0.3s;
+        }
+        
+        .rr a:hover::after {
+            transform: translateY(0);
+        }
+        
+        /* Добавим раздел "О компании" */
+        .about {
+            background: rgba(0,0,0,0.7);
+            padding: 50px 20px;
+            margin: 0 auto;
+            max-width: 1200px;
+            border-radius: 10px;
+            margin-bottom: 50px;
+        }
+        
+        .about h2 {
+            text-align: center;
+            font-size: 36px;
+            margin-bottom: 30px;
+        }
+        
+        .about p {
+            font-size: 18px;
+            margin-bottom: 20px;
+            text-align: justify;
+        }
+        
+        /* Добавим футер */
+        footer {
+            background: rgba(0,0,0,0.8);
+            padding: 30px 20px;
+            text-align: center;
+        }
+        
+        .contacts {
+            display: flex;
+            justify-content: center;
+            gap: 50px;
+            flex-wrap: wrap;
+            margin-bottom: 30px;
+        }
+        
+        .contact-item {
+            font-size: 18px;
+        }
+        
+        .copyright {
+            font-size: 16px;
+            color: #aaa;
+        }
+        
+        /* Адаптивность */
+        @media (max-width: 1400px) {
+            .rr a {
+                width: 350px;
+                height: 350px;
+            }
+        }
+        
+        @media (max-width: 1200px) {
+            .rr a {
+                width: 300px;
+                height: 300px;
+            }
+        }
+        
+        @media (max-width: 768px) {
+            #nazvan {
+                font-size: 36px;
+            }
+            
+            #shapka {
+                font-size: 20px;
+            }
+            
+            .rr a {
+                width: 100%;
+                max-width: 400px;
+                height: 300px;
+            }
+.modal {
+        display: none;
+        position: fixed;
+        z-index: 1;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0,0,0,0.7);
+    }
+    
+    .modal-content {
+        background-color: #fefefe;
+        margin: 10% auto;
+        padding: 20px;
+        border: 1px solid #888;
+        width: 50%;
+        max-width: 500px;
+        color: black;
+    }
+    
+    .close {
+        color: #aaa;
+        float: right;
+        font-size: 28px;
+        font-weight: bold;
+        cursor: pointer;
+    }
+    
+    .close:hover {
+        color: black;
+    }
+    
+    .form-group {
+        margin-bottom: 15px;
+    }
+    
+    .form-group label {
+        display: block;
+        margin-bottom: 5px;
+    }
+    
+    .form-group input, 
+    .form-group textarea,
+    .form-group select {
+        width: 100%;
+        padding: 8px;
+        box-sizing: border-box;
+    }
+    
+    .submit-btn {
+        background-color: #4CAF50;
+        color: white;
+        padding: 10px 15px;
+        border: none;
+        cursor: pointer;
+        width: 100%;
+    }
+    
+    .submit-btn:hover {
+        background-color: #45a049;
+    }

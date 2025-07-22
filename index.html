@@ -1,0 +1,63 @@
+<html>
+<head>
+<title> Строительство зданий под ключ по всей России </title>
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<link rel="stylesheet" href="styles.css" />
+<link rel="manifest" href="/manifest.json">
+</head>
+
+<body background="fon1.jpg" style="background-size: 100% 100%;">
+<div> 
+<p id = "nazvan">TreBriCon</p>
+<p id = "shapka">Сооружение гражданской инфраструктуры <br> в короткие сроки и на высоком уровне <br> по всей России</p>
+    <div id="zak"> 
+        <a href="za.html" class="text">Оформить заявку</a>
+    </div>
+
+    <div class="rr">
+    <a href="dom.html" data-title="Жилые дома">
+        <img src='dom1.jpg'>
+    </a>
+    <a href="banya.html" data-title="Бани и сауны">
+		<img src='ban1.jpg'>
+    </a>
+    <a href="bas.html" data-title="Басейны">
+        <img src='bas1.png'>
+    </a>
+    <a href="sarai.html" data-title="Хозяйственные постройки">
+        <img src='sar1.jpg'>
+    </a>
+    <a href="garazh.html" data-title="Гаражи">
+        <img src='gar1.jpg'>
+    </a>
+    <a href="teplica.html" data-title="Теплицы">
+        <img src='tep1.jpeg'>
+    </a>
+</div>
+    <footer>
+        <div class="contacts">
+            <div class="contact-item">
+                <strong>Телефон:</strong> +7 (917) 853-52-30
+            </div>
+            <div class="contact-item">
+                <strong>Email:</strong> info@trebricon.ru
+            </div>
+            <div class="contact-item">
+                <strong>Адрес:</strong> г. Москва, ул. Бутлерова, 3
+            </div>
+        </div>
+        <div class="copyright">
+            © 2023 TreBriCon. Все права защищены.
+        </div>
+    </footer>
+
+
+<script>
+  if ('serviceWorker' in navigator) {
+    navigator.serviceWorker.register('/sw.js')
+      .then(() => console.log('Service Worker зарегистрирован!'))
+      .catch(err => console.log('Ошибка:', err));
+  }
+</script>
+</body>
+</html>
