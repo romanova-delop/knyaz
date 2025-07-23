@@ -38,7 +38,20 @@
         <div class="contacts">
             <div class="contact-item">
                 <strong>Телефон:</strong> +7 (917) 853-52-30
-            </div>
+            </div><!DOCTYPE html>
+<html>
+<head>
+  <title>Офлайн режим</title>
+  <style>
+    body { font-family: Arial, sans-serif; text-align: center; padding: 20px; }
+  </style>
+</head>
+<body>
+  <h1>Вы сейчас офлайн</h1>
+  <p>Приложение работает в офлайн-режиме. Некоторые функции могут быть недоступны.</p>
+  <p>Как только соединение восстановится, приложение автоматически обновится.</p>
+</body>
+</html>
             <div class="contact-item">
                 <strong>Email:</strong> info@trebricon.ru
             </div>
@@ -52,12 +65,19 @@
     </footer>
 
 
-<script>
-  if ('serviceWorker' in navigator) {
-    navigator.serviceWorker.register('/sw.js')
-      .then(() => console.log('Service Worker зарегистрирован!'))
-      .catch(err => console.log('Ошибка:', err));
-  }
-</script>
+ <script>
+       if ('serviceWorker' in navigator) {
+         window.addEventListener('load', function () {
+           navigator.serviceWorker
+             .register('serviceworker.js')
+             .then(function (reg) {
+               console.log('ServiceWorkerзарегистрирован: ', reg.scope);
+             })
+             .catch(function (err) {
+               console.log('Ошибка регистрацииServiceWorker: ', err);
+             });
+         });
+       }
+     </script>
 </body>
 </html>
