@@ -1,0 +1,275 @@
+<html>
+<head>
+<title>Строительство зданий под ключ по всей России</title>
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<link rel="stylesheet" href="styles.css" />
+<link rel="manifest" href="/manifest.json">
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    margin: 0;
+    padding: 20px;
+  }
+  .header {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  .title {
+    font-size: 32px;
+    color: #2c3e50;
+    margin-bottom: 10px;
+  }
+  .subtitle {
+    font-size: 18px;
+    color: #7f8c8d;
+    margin-bottom: 20px;
+  }
+  .nav-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 30px;
+    flex-wrap: wrap;
+  }
+  .nav-btn {
+    background-color: #e67e22;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background 0.3s;
+  }
+  .nav-btn:hover {
+    background-color: #d35400;
+  }
+  .houses-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    margin-bottom: 40px;
+  }
+  .house-card {
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    width: 300px;
+    overflow: hidden;
+    transition: transform 0.3s;
+    display: flex;
+    flex-direction: column;
+  }
+  .house-card:hover {
+    transform: translateY(-5px);
+  }
+  .house-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+  }
+  .house-info {
+    padding: 20px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+  }
+  .house-title {
+    font-size: 20px;
+    margin: 0 0 10px 0;
+    color: #2c3e50;
+    text-align: center;
+  }
+  .house-price {
+    font-size: 18px;
+    color: #e74c3c;
+    font-weight: bold;
+    margin-bottom: 15px;
+    text-align: center;
+  }
+  .house-features {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 15px 0;
+    flex: 1;
+  }
+  .house-features li {
+    margin-bottom: 5px;
+    color: #34495e;
+  }
+  .order-btn-container {
+    text-align: center;
+    margin-top: auto;
+  }
+  .order-btn {
+    display: inline-block;
+    background: #3498db;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background 0.3s;
+  }
+  .order-btn:hover {
+    background: #2980b9;
+  }
+  footer {
+    text-align: center;
+    padding: 20px;
+    background: #2c3e50;
+    color: white;
+    margin-top: 40px;
+  }
+</style>
+</head>
+
+<body>
+<div class="header">
+  <h1 class="title">TreBriCon</h1>
+  <p class="subtitle">Строительство домов под ключ по всей России</p>
+  
+  <div class="nav-buttons">
+    <a href="index.html" class="nav-btn">Главная</a>
+    <a href="reviews.html" class="nav-btn">Отзывы</a>
+    <a href="about.html" class="nav-btn">О компании</a>
+  </div>
+</div>
+
+<div class="houses-container">
+  <!-- Дом 1 -->
+  <div class="house-card">
+    <img src="dom1.jpg" alt="Дом в классическом стиле" class="house-image">
+    <div class="house-info">
+      <h3 class="house-title">Классический загородный дом</h3>
+      <div class="house-price">от 2 500 000 ₽</div>
+      <ul class="house-features">
+        <li>Площадь: 120 м²</li>
+        <li>Материал: Кирпич</li>
+        <li>Этажность: 1 этажа</li>
+        <li>Срок строительства: 4-6 месяцев</li>
+      </ul>
+      <div class="order-btn-container">
+        <a href="za.html" class="order-btn">Заказать</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Дом 2 -->
+  <div class="house-card">
+    <img src="dom2.jpg" alt="Современный дом" class="house-image">
+    <div class="house-info">
+      <h3 class="house-title">Современный коттедж</h3>
+      <div class="house-price">от 3 200 000 ₽</div>
+      <ul class="house-features">
+        <li>Площадь: 150 м²</li>
+        <li>Материал: Газобетон</li>
+        <li>Этажность: 2 этажа</li>
+        <li>Срок строительства: 5-7 месяцев</li>
+      </ul>
+      <div class="order-btn-container">
+        <a href="za.html" class="order-btn">Заказать</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Дом 3 -->
+  <div class="house-card">
+    <img src="dom3.jpg" alt="Деревянный дом" class="house-image">
+    <div class="house-info">
+      <h3 class="house-title">Дом из бруса</h3>
+      <div class="house-price">от 1 800 000 ₽</div>
+      <ul class="house-features">
+        <li>Площадь: 100 м²</li>
+        <li>Материал: Профилированный брус</li>
+        <li>Этажность: 2 этаж</li>
+        <li>Срок строительства: 2-3 месяца</li>
+      </ul>
+      <div class="order-btn-container">
+        <a href="za.html" class="order-btn">Заказать</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Дом 4 -->
+  <div class="house-card">
+    <img src="dom4.jpg" alt="Эконом вариант дома" class="house-image">
+    <div class="house-info">
+      <h3 class="house-title">Эконом-вариант</h3>
+      <div class="house-price">от 1 200 000 ₽</div>
+      <ul class="house-features">
+        <li>Площадь: 80 м²</li>
+        <li>Материал: Каркасная технология</li>
+        <li>Этажность: 1 этаж</li>
+        <li>Срок строительства: 1-2 месяца</li>
+      </ul>
+      <div class="order-btn-container">
+        <a href="za.html" class="order-btn">Заказать</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Дом 5 -->
+  <div class="house-card">
+    <img src="dom5.jpg" alt="Дом премиум класса" class="house-image">
+    <div class="house-info">
+      <h3 class="house-title">Премиум коттедж</h3>
+      <div class="house-price">от 5 000 000 ₽</div>
+      <ul class="house-features">
+        <li>Площадь: 200 м²</li>
+        <li>Материал: Кирпич + натуральный камень</li>
+        <li>Этажность: 2 этажа + мансарда</li>
+        <li>Срок строительства: 8-10 месяцев</li>
+      </ul>
+      <div class="order-btn-container">
+        <a href="za.html" class="order-btn">Заказать</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Дом 6 -->
+  <div class="house-card">
+    <img src="dom6.jpg" alt="Дачный домик" class="house-image">
+    <div class="house-info">
+      <h3 class="house-title">Дачный домик</h3>
+      <div class="house-price">от 800 000 ₽</div>
+      <ul class="house-features">
+        <li>Площадь: 60 м²</li>
+        <li>Материал: Деревянный каркас</li>
+        <li>Этажность: 1 этаж</li>
+        <li>Срок строительства: 3-4 недели</li>
+      </ul>
+      <div class="order-btn-container">
+        <a href="za.html" class="order-btn">Заказать</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<footer>
+  <div class="contacts">
+    <div class="contact-item">
+      <strong>Телефон:</strong> +7 (917) 853-52-30
+    </div>
+    <div class="contact-item">
+      <strong>Email:</strong> info@trebricon.ru
+    </div>
+    <div class="contact-item">
+      <strong>Адрес:</strong> г. Москва, ул. Бутлерова, 3
+    </div>
+  </div>
+  <div class="copyright">
+    © 2025 TreBriCon. Все права защищены.
+  </div>
+</footer>
+
+<script>
+  if ('serviceWorker' in navigator) {
+    navigator.serviceWorker.register('/sw.js')
+      .then(() => console.log('Service Worker зарегистрирован!'))
+      .catch(err => console.log('Ошибка:', err));
+  }
+</script>
+</body>
+</html>

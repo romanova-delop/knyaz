@@ -1,0 +1,271 @@
+<html>
+<head>
+<title>Строительство хозяйственных построек под ключ по всей России</title>
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<link rel="stylesheet" href="styles.css" />
+<link rel="manifest" href="/manifest.json">
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    margin: 0;
+    padding: 20px;
+  }
+  .header {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  .title {
+    font-size: 32px;
+    color: #2c3e50;
+    margin-bottom: 10px;
+  }
+  .subtitle {
+    font-size: 18px;
+    color: #7f8c8d;
+    margin-bottom: 20px;
+  }
+  .nav-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 30px;
+  }
+  .nav-btn {
+    background-color: #ff7f00;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background 0.3s;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+  }
+  .nav-btn:hover {
+    background-color: #e67300;
+  }
+  .building-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    margin-bottom: 40px;
+  }
+  .building-card {
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    width: 300px;
+    overflow: hidden;
+    transition: transform 0.3s;
+    display: flex;
+    flex-direction: column;
+  }
+  .building-card:hover {
+    transform: translateY(-5px);
+  }
+  .building-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+  }
+  .building-info {
+    padding: 20px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+  }
+  .building-title {
+    font-size: 20px;
+    margin: 0 0 10px 0;
+    color: #2c3e50;
+    text-align: center;
+  }
+  .building-price {
+    font-size: 18px;
+    color: #27ae60;
+    font-weight: bold;
+    margin-bottom: 15px;
+    text-align: center;
+  }
+  .building-features {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 15px 0;
+    flex: 1;
+  }
+  .building-features li {
+    margin-bottom: 5px;
+    color: #34495e;
+    position: relative;
+    padding-left: 20px;
+  }
+  .building-features li:before {
+    content: "•";
+    color: #27ae60;
+    position: absolute;
+    left: 0;
+  }
+  .order-btn-container {
+    text-align: center;
+    margin-top: auto;
+  }
+  .order-btn {
+    display: inline-block;
+    background: #27ae60;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background 0.3s;
+    width: auto;
+    margin: 0 auto;
+  }
+  .order-btn:hover {
+    background: #219653;
+  }
+  .building-size {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: rgba(0,0,0,0.7);
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-weight: bold;
+  }
+  footer {
+    text-align: center;
+    padding: 20px;
+    background: #2c3e50;
+    color: white;
+    margin-top: 40px;
+  }
+</style>
+</head>
+
+<body>
+<div class="header">
+  <h1 class="title">TreBriCon</h1>
+  <p class="subtitle">Строительство хозяйственных построек под ключ по всей России</p>
+  
+  <div class="nav-buttons">
+    <a href="index.html" class="nav-btn">Главная</a>
+    <a href="reviews.html" class="nav-btn">Отзывы</a>
+    <a href="about.html" class="nav-btn">О компании</a>
+  </div>
+</div>
+
+<div class="building-container">
+  <!-- Постройка 1 -->
+  <div class="building-card">
+    <div style="position:relative;">
+      <img src="shed1.jpg" alt="Сарай для инструментов" class="building-image">
+    </div>
+    <div class="building-info">
+      <h3 class="building-title">Сарай для инструментов</h3>
+      <div class="building-price">от 250 000 ₽</div>
+      <ul class="building-features">
+        <li>Материал: деревянный каркас</li>
+        <li>Обшивка: профнастил</li>
+        <li>Дверь: распашная металлическая</li>
+        <li>Фундамент: столбчатый</li>
+        <li>Срок строительства: 5-7 дней</li>
+      </ul>
+      <div class="order-btn-container">
+        <a href="za.html" class="order-btn">Заказать</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Постройка 2 -->
+  <div class="building-card">
+    <div style="position:relative;">
+      <img src="shed2.jpg" alt="Дровяник" class="building-image">
+    </div>
+    <div class="building-info">
+      <h3 class="building-title">Дровяник с навесом</h3>
+      <div class="building-price">от 350 000 ₽</div>
+      <ul class="building-features">
+        <li>Материал: профильная труба + доска</li>
+        <li>Крыша: поликарбонат</li>
+        <li>Вместимость: 6-8 куб.м дров</li>
+        <li>Защита от влаги</li>
+        <li>Срок строительства: 7-10 дней</li>
+      </ul>
+      <div class="order-btn-container">
+        <a href="za.html" class="order-btn">Заказать</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Постройка 3 -->
+  <div class="building-card">
+    <div style="position:relative;">
+      <img src="shed3.jpg" alt="Беседка" class="building-image">
+    </div>
+    <div class="building-info">
+      <h3 class="building-title">Летняя беседка</h3>
+      <div class="building-price">от 400 000 ₽</div>
+      <ul class="building-features">
+        <li>Материал: дерево</li>
+        <li>Крыша: мягкая черепица</li>
+        <li>Вместимость: 6-8 человек</li>
+        <li>Мангал в комплекте</li>
+        <li>Срок строительства: 10-14 дней</li>
+      </ul>
+      <div class="order-btn-container">
+        <a href="za.html" class="order-btn">Заказать</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Постройка 4 -->
+  <div class="building-card">
+    <div style="position:relative;">
+      <img src="shed4.jpg" alt="Хозблок" class="building-image">
+    </div>
+    <div class="building-info">
+      <h3 class="building-title">Хозблок с туалетом и душем</h3>
+      <div class="building-price">от 600 000 ₽</div>
+      <ul class="building-features">
+        <li>2 отделения: хранение + санузел</li>
+        <li>Утепленные стены</li>
+        <li>Водопровод и канализация</li>
+        <li>Электропроводка</li>
+        <li>Срок строительства: 2-3 недели</li>
+      </ul>
+      <div class="order-btn-container">
+        <a href="za.html" class="order-btn">Заказать</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<footer>
+  <div class="contacts">
+    <div class="contact-item">
+      <strong>Телефон:</strong> +7 (917) 853-52-30
+    </div>
+    <div class="contact-item">
+      <strong>Email:</strong> info@trebricon.ru
+    </div>
+    <div class="contact-item">
+      <strong>Адрес:</strong> г. Москва, ул. Бутлерова, 3
+    </div>
+  </div>
+  <div class="copyright">
+    © 2025 TreBriCon. Все права защищены.
+  </div>
+</footer>
+
+<script>
+  if ('serviceWorker' in navigator) {
+    navigator.serviceWorker.register('/sw.js')
+      .then(() => console.log('Service Worker зарегистрирован!'))
+      .catch(err => console.log('Ошибка:', err));
+  }
+</script>
+</body>
+</html>

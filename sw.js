@@ -5,7 +5,6 @@ const urlsToCache = [
   '/styles.css',
   '/script.js',
   '/icons/icon-192.png',
-  // Добавьте другие важные файлы (шрифты, изображения)
 ];
 
 self.addEventListener('install', event => {

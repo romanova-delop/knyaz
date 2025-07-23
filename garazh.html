@@ -1,0 +1,272 @@
+<html>
+<head>
+<title>Строительство гаражей под ключ по всей России</title>
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<link rel="stylesheet" href="styles.css" />
+<link rel="manifest" href="/manifest.json">
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    margin: 0;
+    padding: 20px;
+  }
+  .header {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  .title {
+    font-size: 32px;
+    color: #2c3e50;
+    margin-bottom: 10px;
+  }
+  .subtitle {
+    font-size: 18px;
+    color: #7f8c8d;
+    margin-bottom: 20px;
+  }
+  .nav-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 30px;
+  }
+  .nav-btn {
+    background-color: #ff7f00;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background 0.3s;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+  }
+  .nav-btn:hover {
+    background-color: #e67300;
+  }
+  .garage-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    margin-bottom: 40px;
+  }
+  .garage-card {
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    width: 300px;
+    overflow: hidden;
+    transition: transform 0.3s;
+    display: flex;
+    flex-direction: column;
+  }
+  .garage-card:hover {
+    transform: translateY(-5px);
+  }
+  .garage-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+  }
+  .garage-info {
+    padding: 20px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+  }
+  .garage-title {
+    font-size: 20px;
+    margin: 0 0 10px 0;
+    color: #2c3e50;
+    text-align: center;
+  }
+  .garage-price {
+    font-size: 18px;
+    color: #e67e22;
+    font-weight: bold;
+    margin-bottom: 15px;
+    text-align: center;
+  }
+  .garage-features {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 15px 0;
+    flex: 1;
+  }
+  .garage-features li {
+    margin-bottom: 5px;
+    color: #34495e;
+    position: relative;
+    padding-left: 20px;
+  }
+  .garage-features li:before {
+    content: "•";
+    color: #e67e22;
+    position: absolute;
+    left: 0;
+  }
+  .order-btn-container {
+    text-align: center;
+    margin-top: auto;
+    padding-top: 10px;
+  }
+  .order-btn {
+    display: inline-block;
+    background: #e67e22;
+    color: white;
+    padding: 10px 30px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background 0.3s;
+    width: fit-content;
+    margin: 0 auto;
+  }
+  .order-btn:hover {
+    background: #d35400;
+  }
+  .garage-size {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: rgba(0,0,0,0.7);
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-weight: bold;
+  }
+  footer {
+    text-align: center;
+    padding: 20px;
+    background: #2c3e50;
+    color: white;
+    margin-top: 40px;
+  }
+</style>
+</head>
+
+<body>
+<div class="header">
+  <h1 class="title">TreBriCon</h1>
+  <p class="subtitle">Строительство гаражей под ключ по всей России</p>
+  
+  <div class="nav-buttons">
+    <a href="index.html" class="nav-btn">Главная</a>
+    <a href="reviews.html" class="nav-btn">Отзывы</a>
+    <a href="about.html" class="nav-btn">О компании</a>
+  </div>
+</div>
+
+<div class="garage-container">
+  <!-- Гараж 1 -->
+  <div class="garage-card">
+    <div style="position:relative;">
+      <img src="garage1.jpg" alt="Одноэтажный гараж" class="garage-image">
+    </div>
+    <div class="garage-info">
+      <h3 class="garage-title">Стандартный гараж</h3>
+      <div class="garage-price">от 450 000 ₽</div>
+      <ul class="garage-features">
+        <li>Материал: кирпич</li>
+        <li>Ворота: распашные</li>
+        <li>Площадь: 24 кв.м</li>
+        <li>Высота: 2.5 м</li>
+        <li>Срок строительства: 2-3 недели</li>
+      </ul>
+      <div class="order-btn-container">
+        <a href="za.html" class="order-btn">Заказать</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Гараж 2 -->
+  <div class="garage-card">
+    <div style="position:relative;">
+      <img src="garage2.jpg" alt="Гараж с мастерской" class="garage-image">
+    </div>
+    <div class="garage-info">
+      <h3 class="garage-title">Гараж с мастерской</h3>
+      <div class="garage-price">от 650 000 ₽</div>
+      <ul class="garage-features">
+        <li>Материал: газобетон</li>
+        <li>Ворота: секционные</li>
+        <li>Доп. помещение: 10 кв.м</li>
+        <li>Электропроводка</li>
+        <li>Срок строительства: 3-4 недели</li>
+      </ul>
+      <div class="order-btn-container">
+        <a href="za.html" class="order-btn">Заказать</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Гараж 3 -->
+  <div class="garage-card">
+    <div style="position:relative;">
+      <img src="garage3.jpg" alt="Двухэтажный гараж" class="garage-image">
+    </div>
+    <div class="garage-info">
+      <h3 class="garage-title">Гараж с мансардой</h3>
+      <div class="garage-price">от 950 000 ₽</div>
+      <ul class="garage-features">
+        <li>Материал: пеноблок</li>
+        <li>Ворота: подъемно-поворотные</li>
+        <li>Полезная площадь: 80 кв.м</li>
+        <li>Утепление</li>
+        <li>Срок строительства: 5-6 недель</li>
+      </ul>
+      <div class="order-btn-container">
+        <a href="za.html" class="order-btn">Заказать</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Гараж 4 -->
+  <div class="garage-card">
+    <div style="position:relative;">
+      <img src="garage4.jpg" alt="Гараж на 2 машины" class="garage-image">
+    </div>
+    <div class="garage-info">
+      <h3 class="garage-title">Гараж на 2 автомобиля</h3>
+      <div class="garage-price">от 1 200 000 ₽</div>
+      <ul class="garage-features">
+        <li>Материал: монолитный бетон</li>
+        <li>2 комплекта ворот</li>
+        <li>Площадь: 60 кв.м</li>
+        <li>Система вентиляции</li>
+        <li>Срок строительства: 6-8 недель</li>
+      </ul>
+      <div class="order-btn-container">
+        <a href="za.html" class="order-btn">Заказать</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<footer>
+  <div class="contacts">
+    <div class="contact-item">
+      <strong>Телефон:</strong> +7 (917) 853-52-30
+    </div>
+    <div class="contact-item">
+      <strong>Email:</strong> info@trebricon.ru
+    </div>
+    <div class="contact-item">
+      <strong>Адрес:</strong> г. Москва, ул. Бутлерова, 3
+    </div>
+  </div>
+  <div class="copyright">
+    © 2025 TreBriCon. Все права защищены.
+  </div>
+</footer>
+
+<script>
+  if ('serviceWorker' in navigator) {
+    navigator.serviceWorker.register('/sw.js')
+      .then(() => console.log('Service Worker зарегистрирован!'))
+      .catch(err => console.log('Ошибка:', err));
+  }
+</script>
+</body>
+</html>

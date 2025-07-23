@@ -1,0 +1,311 @@
+<html>
+<head>
+<title>Строительство бассейнов под ключ по всей России</title>
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<link rel="stylesheet" href="styles.css" />
+<link rel="manifest" href="/manifest.json">
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    margin: 0;
+    padding: 20px;
+  }
+  .header {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  .title {
+    font-size: 32px;
+    color: #2c3e50;
+    margin-bottom: 10px;
+  }
+  .subtitle {
+    font-size: 18px;
+    color: #7f8c8d;
+    margin-bottom: 20px;
+  }
+  .nav-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 30px;
+  }
+  .nav-btn {
+    background-color: #ff7f00;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background 0.3s;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+  }
+  .nav-btn:hover {
+    background-color: #e67300;
+  }
+  .pool-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    margin-bottom: 40px;
+  }
+  .pool-card {
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    width: 300px;
+    overflow: hidden;
+    transition: transform 0.3s;
+    display: flex;
+    flex-direction: column;
+  }
+  .pool-card:hover {
+    transform: translateY(-5px);
+  }
+  .pool-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+  }
+  .pool-info {
+    padding: 20px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+  }
+  .pool-title {
+    font-size: 20px;
+    margin: 0 0 10px 0;
+    color: #2c3e50;
+    text-align: center;
+  }
+  .pool-price {
+    font-size: 18px;
+    color: #3498db;
+    font-weight: bold;
+    margin-bottom: 15px;
+    text-align: center;
+  }
+  .pool-features {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 15px 0;
+    flex: 1;
+  }
+  .pool-features li {
+    margin-bottom: 5px;
+    color: #34495e;
+    position: relative;
+    padding-left: 20px;
+  }
+  .pool-features li:before {
+    content: "•";
+    color: #3498db;
+    position: absolute;
+    left: 0;
+  }
+  .order-btn-container {
+    text-align: center;
+    margin-top: auto;
+  }
+  .order-btn {
+    display: inline-block;
+    background: #3498db;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background 0.3s;
+  }
+  .order-btn:hover {
+    background: #2980b9;
+  }
+  .pool-size {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: rgba(0,0,0,0.7);
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-weight: bold;
+  }
+  footer {
+    text-align: center;
+    padding: 20px;
+    background: #2c3e50;
+    color: white;
+    margin-top: 40px;
+  }
+</style>
+</head>
+
+<body>
+<div class="header">
+  <h1 class="title">TreBriCon</h1>
+  <p class="subtitle">Строительство бассейнов под ключ по всей России</p>
+  
+  <div class="nav-buttons">
+    <a href="index.html" class="nav-btn">Главная</a>
+    <a href="reviews.html" class="nav-btn">Отзывы</a>
+    <a href="about.html" class="nav-btn">О компании</a>
+  </div>
+</div>
+
+<div class="pool-container">
+  <!-- Бассейн 1 -->
+  <div class="pool-card">
+    <div style="position:relative;">
+      <img src="pool1.jpg" alt="Крытый бассейн" class="pool-image">
+    </div>
+    <div class="pool-info">
+      <h3 class="pool-title">Крытый бассейн "Стандарт"</h3>
+      <div class="pool-price">от 1 800 000 ₽</div>
+      <ul class="pool-features">
+        <li>Глубина: 1.5-2.2 м</li>
+        <li>Система фильтрации</li>
+        <li>Подогрев воды</li>
+        <li>Отделка: мозаика</li>
+        <li>Срок строительства: 6-8 недель</li>
+      </ul>
+      <div class="order-btn-container">
+        <a href="za.html" class="order-btn">Заказать</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Бассейн 2 -->
+  <div class="pool-card">
+    <div style="position:relative;">
+      <img src="pool2.jpg" alt="Открытый бассейн" class="pool-image">
+    </div>
+    <div class="pool-info">
+      <h3 class="pool-title">Открытый бассейн "Люкс"</h3>
+      <div class="pool-price">от 2 500 000 ₽</div>
+      <ul class="pool-features">
+        <li>Глубина: 1.2-2.5 м</li>
+        <li>Противотечение</li>
+        <li>Подсветка</li>
+        <li>Отделка: плитка</li>
+        <li>Срок строительства: 8-10 недель</li>
+      </ul>
+      <div class="order-btn-container">
+        <a href="za.html" class="order-btn">Заказать</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Бассейн 3 -->
+  <div class="pool-card">
+    <div style="position:relative;">
+      <img src="pool3.jpg" alt="SPA бассейн" class="pool-image">
+    </div>
+    <div class="pool-info">
+      <h3 class="pool-title">SPA бассейн "Релакс"</h3>
+      <div class="pool-price">от 1 200 000 ₽</div>
+      <ul class="pool-features">
+        <li>Глубина: 1.0-1.4 м</li>
+        <li>Гидромассаж (6 форсунок)</li>
+        <li>Подогрев до 38°C</li>
+        <li>Отделка: мозаика</li>
+        <li>Срок строительства: 4-5 недель</li>
+      </ul>
+      <div class="order-btn-container">
+        <a href="za.html" class="order-btn">Заказать</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Бассейн 4 -->
+  <div class="pool-card">
+    <div style="position:relative;">
+      <img src="pool4.jpg" alt="Спортивный бассейн" class="pool-image">
+    </div>
+    <div class="pool-info">
+      <h3 class="pool-title">Спортивный бассейн</h3>
+      <div class="pool-price">от 3 500 000 ₽</div>
+      <ul class="pool-features">
+        <li>Глубина: 2.0 м (постоянная)</li>
+        <li>Антиволновая система</li>
+        <li>6 дорожек</li>
+        <li>Отделка: специальное покрытие</li>
+        <li>Срок строительства: 10-12 недель</li>
+      </ul>
+      <div class="order-btn-container">
+        <a href="za.html" class="order-btn">Заказать</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Бассейн 5 -->
+  <div class="pool-card">
+    <div style="position:relative;">
+      <img src="pool5.jpg" alt="Компактный бассейн" class="pool-image">
+    </div>
+    <div class="pool-info">
+      <h3 class="pool-title">Компактный бассейн "Мини"</h3>
+      <div class="pool-price">от 850 000 ₽</div>
+      <ul class="pool-features">
+        <li>Глубина: 1.2 м</li>
+        <li>Каркасная конструкция</li>
+        <li>Система фильтрации</li>
+        <li>Отделка: пленка ПВХ</li>
+        <li>Срок строительства: 2-3 недели</li>
+      </ul>
+      <div class="order-btn-container">
+        <a href="za.html" class="order-btn">Заказать</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Бассейн 6 -->
+  <div class="pool-card">
+    <div style="position:relative;">
+      <img src="pool6.jpg" alt="Дизайнерский бассейн" class="pool-image">
+    </div>
+    <div class="pool-info">
+      <h3 class="pool-title">Дизайнерский бассейн</h3>
+      <div class="pool-price">от 4 000 000 ₽</div>
+      <ul class="pool-features">
+        <li>Индивидуальный проект</li>
+        <li>Любая форма и глубина</li>
+        <li>Автоматика управления</li>
+        <li>Эксклюзивная отделка</li>
+        <li>Срок строительства: от 12 недель</li>
+      </ul>
+      <div class="order-btn-container">
+        <a href="za.html" class="order-btn">Заказать</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<footer>
+  <div class="contacts">
+    <div class="contact-item">
+      <strong>Телефон:</strong> +7 (917) 853-52-30
+    </div>
+    <div class="contact-item">
+      <strong>Email:</strong> info@trebricon.ru
+    </div>
+    <div class="contact-item">
+      <strong>Адрес:</strong> г. Москва, ул. Бутлерова, 3
+    </div>
+  </div>
+  <div class="copyright">
+    © 2025 TreBriCon. Все права защищены.
+  </div>
+</footer>
+
+<script>
+  if ('serviceWorker' in navigator) {
+    navigator.serviceWorker.register('/sw.js')
+      .then(() => console.log('Service Worker зарегистрирован!'))
+      .catch(err => console.log('Ошибка:', err));
+  }
+</script>
+</body>
+</html>

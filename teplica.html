@@ -1,0 +1,251 @@
+<html>
+<head>
+<title>Строительство теплиц под ключ по всей России</title>
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<link rel="stylesheet" href="styles.css" />
+<link rel="manifest" href="/manifest.json">
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    margin: 0;
+    padding: 20px;
+  }
+  .header {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  .title {
+    font-size: 32px;
+    color: #2c3e50;
+    margin-bottom: 10px;
+  }
+  .subtitle {
+    font-size: 18px;
+    color: #7f8c8d;
+    margin-bottom: 20px;
+  }
+  .nav-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 30px;
+  }
+  .nav-btn {
+    background-color: #ff7f00;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background 0.3s;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+  }
+  .nav-btn:hover {
+    background-color: #e67300;
+  }
+  .greenhouse-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    margin-bottom: 40px;
+  }
+  .greenhouse-card {
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    width: 300px;
+    overflow: hidden;
+    transition: transform 0.3s;
+    display: flex;
+    flex-direction: column;
+  }
+  .greenhouse-card:hover {
+    transform: translateY(-5px);
+  }
+  .greenhouse-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+  }
+  .greenhouse-info {
+    padding: 20px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+  }
+  .greenhouse-title {
+    font-size: 20px;
+    margin: 0 0 10px 0;
+    color: #2c3e50;
+    text-align: center;
+  }
+  .greenhouse-price {
+    font-size: 18px;
+    color: #27ae60;
+    font-weight: bold;
+    margin-bottom: 15px;
+    text-align: center;
+  }
+  .greenhouse-features {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 15px 0;
+    flex: 1;
+  }
+  .greenhouse-features li {
+    margin-bottom: 5px;
+    color: #34495e;
+    position: relative;
+    padding-left: 20px;
+  }
+  .greenhouse-features li:before {
+    content: "•";
+    color: #27ae60;
+    position: absolute;
+    left: 0;
+  }
+  .order-btn-container {
+    text-align: center;
+    margin-top: auto;
+    padding-top: 10px;
+  }
+  .order-btn {
+    display: inline-block;
+    background: #27ae60;
+    color: white;
+    padding: 10px 30px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background 0.3s;
+    width: fit-content;
+    margin: 0 auto;
+  }
+  .order-btn:hover {
+    background: #219653;
+  }
+  .greenhouse-size {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: rgba(0,0,0,0.7);
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-weight: bold;
+  }
+  footer {
+    text-align: center;
+    padding: 20px;
+    background: #2c3e50;
+    color: white;
+    margin-top: 40px;
+  }
+</style>
+</head>
+
+<body>
+<div class="header">
+  <h1 class="title">TreBriCon</h1>
+  <p class="subtitle">Строительство теплиц под ключ по всей России</p>
+  
+  <div class="nav-buttons">
+    <a href="index.html" class="nav-btn">Главная</a>
+    <a href="reviews.html" class="nav-btn">Отзывы</a>
+    <a href="about.html" class="nav-btn">О компании</a>
+  </div>
+</div>
+
+<div class="greenhouse-container">
+  <!-- Теплица 1 -->
+  <div class="greenhouse-card">
+    <div style="position:relative;">
+      <img src="gh1.jpg" alt="Стандартная теплица" class="greenhouse-image">
+    </div>
+    <div class="greenhouse-info">
+      <h3 class="greenhouse-title">Теплица "Стандарт"</h3>
+      <div class="greenhouse-price">от 250 000 ₽</div>
+      <ul class="greenhouse-features">
+        <li>Каркас: оцинкованная сталь</li>
+        <li>Покрытие: поликарбонат 6 мм</li>
+        <li>Автоматическое проветривание</li>
+        <li>Фундамент: брус</li>
+        <li>Срок строительства: 3-5 дней</li>
+      </ul>
+      <div class="order-btn-container">
+        <a href="za.html" class="order-btn">Заказать</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Теплица 2 -->
+  <div class="greenhouse-card">
+    <div style="position:relative;">
+      <img src="gh2.jpg" alt="Зимняя теплица" class="greenhouse-image">
+    </div>
+    <div class="greenhouse-info">
+      <h3 class="greenhouse-title">Зимняя теплица</h3>
+      <div class="greenhouse-price">от 450 000 ₽</div>
+      <ul class="greenhouse-features">
+        <li>Двойной поликарбонат</li>
+        <li>Система отопления</li>
+        <li>Автополив</li>
+        <li>Усиленный каркас</li>
+        <li>Срок строительства: 7-10 дней</li>
+      </ul>
+      <div class="order-btn-container">
+        <a href="za.html" class="order-btn">Заказать</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Теплица 3 -->
+  <div class="greenhouse-card">
+    <div style="position:relative;">
+      <img src="gh3.jpeg" alt="Промышленная теплица" class="greenhouse-image">
+    </div>
+    <div class="greenhouse-info">
+      <h3 class="greenhouse-title">Промышленная теплица</h3>
+      <div class="greenhouse-price">от 850 000 ₽</div>
+      <ul class="greenhouse-features">
+        <li>Размеры под заказ</li>
+        <li>Профессиональное оборудование</li>
+        <li>Система климат-контроля</li>
+        <li>Каркас: профильная труба</li>
+        <li>Срок строительства: 2-3 недели</li>
+      </ul>
+      <div class="order-btn-container">
+        <a href="za.html" class="order-btn">Заказать</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<footer>
+  <div class="contacts">
+    <div class="contact-item">
+      <strong>Телефон:</strong> +7 (917) 853-52-30
+    </div>
+    <div class="contact-item">
+      <strong>Email:</strong> info@trebricon.ru
+    </div>
+    <div class="contact-item">
+      <strong>Адрес:</strong> г. Москва, ул. Бутлерова, 3
+    </div>
+  </div>
+  <div class="copyright">
+    © 2025 TreBriCon. Все права защищены.
+  </div>
+</footer>
+
+<script>
+  if ('serviceWorker' in navigator) {
+    navigator.serviceWorker.register('/sw.js')
+      .then(() => console.log('Service Worker зарегистрирован!'))
+      .catch(err => console.log('Ошибка:', err));
+  }
+</script>
+</body>
+</html>
