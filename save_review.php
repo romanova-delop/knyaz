@@ -1,4 +1,4 @@
-<?php
+<php
 header('Content-Type: text/html; charset=utf-8');
 
 // Параметры подключения
@@ -27,4 +27,4 @@ try {
     // Обработка ошибок
     echo json_encode(['success' => false, 'message' => 'Ошибка: ' . $e->getMessage()]);
 }
-?>
+>
