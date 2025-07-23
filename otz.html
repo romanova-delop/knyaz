@@ -1,0 +1,255 @@
+<html>
+<head>
+<title> Отзывы о строительстве зданий под ключ | TreBriCon </title>
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<link rel="stylesheet" href="styles.css" />
+<link rel="manifest" href="/manifest.json">
+<meta name="theme-color" content="#ffffff"/>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<style>
+    .reviews-container {
+        max-width: 800px;
+        margin: 30px auto;
+        padding: 20px;
+        background-color: rgba(255, 255, 255, 0.8);
+        border-radius: 10px;
+        box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    }
+    
+    .review {
+        margin-bottom: 20px;
+        padding: 15px;
+        background-color: white;
+        border-radius: 8px;
+        border-left: 4px solid #2a5885;
+		color: black;
+    }
+    
+    .review-author {
+        font-weight: bold;
+        color: black;
+        margin-bottom: 5px;
+    }
+    
+    .review-date {
+        font-size: 0.8em;
+        color: #666;
+        margin-bottom: 10px;
+    }
+    
+    .review-text {
+        line-height: 1.5;
+        color: black;
+    }
+    
+    .add-review {
+        margin-top: 30px;
+        padding: 20px;
+        background-color: white;
+        border-radius: 8px;
+		color: black;
+    }
+    
+    .add-review h3 {
+        margin-top: 0;
+        color: black;
+    }
+    
+    .form-group {
+        margin-bottom: 15px;
+    }
+    
+    .form-group label {
+        display: block;
+        margin-bottom: 5px;
+        font-weight: bold;
+    }
+    
+    .form-group input, 
+    .form-group textarea {
+        width: 100%;
+        padding: 8px;
+        border: 1px solid #ddd;
+        border-radius: 4px;
+    }
+    
+    .form-group textarea {
+        height: 100px;
+		color: black;
+    }
+    
+    .submit-btn {
+        background-color: #2a5885;
+        color: white;
+        border: none;
+        padding: 10px 20px;
+        border-radius: 4px;
+        cursor: pointer;
+    }
+    
+    .submit-btn:hover {
+        background-color: #1e3c6a;
+    }
+    
+    /* Стили для навигационных кнопок */
+    .nav-buttons {
+        display: flex;
+        justify-content: center;
+        margin: 20px 0;
+        flex-wrap: wrap;
+    }
+    
+    .nav-btn {
+        background-color: #FF8C00; /* Оранжевый цвет */
+        color: white;
+        padding: 10px 20px;
+        margin: 0 10px;
+        border-radius: 5px;
+        text-decoration: none;
+        font-weight: bold;
+        transition: background-color 0.3s;
+        border: none;
+        cursor: pointer;
+        text-align: center;
+        min-width: 120px;
+    }
+    
+    .nav-btn:hover {
+        background-color: #FF7000; /* Темнее оранжевый при наведении */
+    }
+    
+    /* Адаптивность для мобильных устройств */
+    @media (max-width: 600px) {
+        .nav-buttons {
+            flex-direction: column;
+            align-items: center;
+        }
+        
+        .nav-btn {
+            margin: 5px 0;
+            width: 80%;
+        }
+    }
+</style>
+</head>
+
+<body background="fon1.jpg" style="background-size: 100% 100%;">
+<div> 
+<p id="nazvan">TreBriCon</p>
+  
+  <div class="nav-buttons">
+    <a href="index.html" class="nav-btn">Главная</a>
+    <a href="otz.html" class="nav-btn">Отзывы</a>
+    <a href="about.html" class="nav-btn">О компании</a>
+  </div>
+</div>
+    <div class="reviews-container">
+        <h2>Отзывы наших клиентов</h2>
+        
+        <div class="review">
+            <div class="review-author">Иван Петров</div>
+            <div class="review-date">15 октября 2023</div>
+            <div class="review-text">
+                Заказал строительство бани. Работу выполнили в срок, качество на высшем уровне. 
+                Особенно порадовало внимание к деталям и индивидуальный подход. Рекомендую!
+            </div>
+        </div>
+        
+        <div class="review">
+            <div class="review-author">Елена Смирнова</div>
+            <div class="review-date">3 сентября 2023</div>
+            <div class="review-text">
+                Строили с этой компанией дом в Подмосковье. Все этапы от проекта до сдачи прошли гладко. 
+                Команда профессиональная, всегда на связи, все вопросы решали оперативно. Очень довольна результатом.
+            </div>
+        </div>
+        
+        <div class="review">
+            <div class="review-author">Александр Козлов</div>
+            <div class="review-date">22 августа 2023</div>
+            <div class="review-text">
+                Построили гараж за 3 недели, как и обещали. Качественные материалы, аккуратная работа. 
+                Цена соответствует качеству. Буду обращаться еще за строительством бани.
+            </div>
+        </div>
+        
+        <div class="add-review">
+            <h3>Оставить отзыв</h3>
+            <form id="reviewForm">
+                <div class="form-group">
+                    <label for="name">Ваше имя:</label>
+                    <input type="text" id="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email (не обязательно):</label>
+                    <input type="email" id="email">
+                </div>
+                <div class="form-group">
+                    <label for="review">Ваш отзыв:</label>
+                    <textarea id="review" required></textarea>
+                </div>
+                <button type="submit" class="submit-btn">Отправить отзыв</button>
+            </form>
+        </div>
+    </div>
+    
+    <footer>
+        <div class="contacts">
+            <div class="contact-item">
+                <strong>Телефон:</strong> +7 (917) 853-52-30
+            </div>
+            <div class="contact-item">
+                <strong>Email:</strong> info@trebricon.ru
+            </div>
+            <div class="contact-item">
+                <strong>Адрес:</strong> г. Москва, ул. Бутлерова, 3
+            </div>
+        </div>
+        <div class="copyright">
+            © 2025 TreBriCon. Все права защищены.
+        </div>
+    </footer>
+
+<script>
+if ('serviceWorker' in navigator) {
+  window.addEventListener('load', function() {
+    navigator.serviceWorker.register('serviceworker.js')
+      .then(function(registration) {
+        console.log('ServiceWorker успешно зарегистрирован: ', registration.scope);
+      })
+      .catch(function(err) {
+        console.log('Ошибка регистрации ServiceWorker: ', err);
+      });
+  });
+}
+
+document.getElementById('reviewForm').addEventListener('submit', function(e) {
+    e.preventDefault();
+    
+    // Собираем данные формы
+    const formData = new FormData(this);
+    
+    // Отправляем данные на сервер
+    fetch('save_review.php', {
+        method: 'POST',
+        body: formData
+    })
+    .then(response => response.json())
+    .then(data => {
+        if(data.success) {
+            alert(data.message);
+            this.reset();
+        } else {
+            alert('Ошибка: ' + data.message);
+        }
+    })
+    .catch(error => {
+        alert('Произошла ошибка при отправке: ' + error);
+    });
+});
+});
+</script>
+</body>
+</html>
