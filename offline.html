@@ -1,29 +1,27 @@
 
-<html>
+<html lang="ru">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TreBriCon - Офлайн режим</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
     <style>
         body {
             font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            color: #333;
             text-align: center;
-            padding: 20px;
-            background-color: #f5f5f5;
+            padding: 50px 20px;
         }
-        .container {
+        .offline-container {
             max-width: 600px;
             margin: 0 auto;
             background: white;
-            padding: 20px;
+            padding: 30px;
             border-radius: 10px;
             box-shadow: 0 2px 10px rgba(0,0,0,0.1);
         }
         h1 {
-            color: #333;
-        }
-        p {
-            color: #666;
+            color: #e74c3c;
         }
         .logo {
             font-size: 24px;
@@ -31,15 +29,25 @@
             color: #2c3e50;
             margin-bottom: 20px;
         }
+        button {
+            background: #3498db;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 20px;
+        }
     </style>
 </head>
 <body>
-    <div class="container">
+    <div class="offline-container">
         <div class="logo">TreBriCon</div>
-        <h1>Вы сейчас офлайн</h1>
-        <p>К сожалению, для просмотра этой страницы требуется интернет-соединение.</p>
-        <p>Основная информация о нашей компании доступна в офлайн-режиме.</p>
-        <p>Как только соединение восстановится, вы сможете продолжить работу с приложением.</p>
+        <h1>Офлайн режим</h1>
+        <p>Кажется, у вас нет интернет-соединения.</p>
+        <p>Некоторые функции приложения могут быть недоступны.</p>
+        <p>Мы сохранили основные данные для офлайн-доступа.</p>
+        <button onclick="window.location.href='/'">На главную</button>
     </div>
 </body>
 </html>
