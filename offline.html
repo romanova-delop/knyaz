@@ -1,53 +1,72 @@
-
-<html lang="ru">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TreBriCon - Офлайн режим</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f0f0f0;
-            color: #333;
-            text-align: center;
-            padding: 50px 20px;
-        }
-        .offline-container {
-            max-width: 600px;
-            margin: 0 auto;
-            background: white;
-            padding: 30px;
-            border-radius: 10px;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-        }
-        h1 {
-            color: #e74c3c;
-        }
-        .logo {
-            font-size: 24px;
-            font-weight: bold;
-            color: #2c3e50;
-            margin-bottom: 20px;
-        }
-        button {
-            background: #3498db;
-            color: white;
-            border: none;
-            padding: 10px 20px;
-            border-radius: 5px;
-            cursor: pointer;
-            margin-top: 20px;
-        }
-    </style>
+<title> Строительство зданий под ключ по всей России </title>
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<link rel="stylesheet" href="styles.css" />
+<link rel="manifest" href="/manifest.json">
+<meta name="theme-color" content="#ffffff"/>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-capable" content="yes">
 </head>
-<body>
-    <div class="offline-container">
-        <div class="logo">TreBriCon</div>
-        <h1>Офлайн режим</h1>
-        <p>Кажется, у вас нет интернет-соединения.</p>
-        <p>Некоторые функции приложения могут быть недоступны.</p>
-        <p>Мы сохранили основные данные для офлайн-доступа.</p>
-        <button onclick="window.location.href='/'">На главную</button>
+
+<body background="fon1.jpg" style="background-size: 100% 100%;">
+<div> 
+<p id = "nazvan">TreBriCon ОФЛАЙН</p>
+<p id = "shapka">Сооружение гражданской инфраструктуры <br> в короткие сроки и на высоком уровне <br> по всей России</p>
+    <div id="zak"> 
+        <a href="za.html" class="text">Оформить заявку</a>
     </div>
+
+    <div class="rr">
+    <a href="dom.html" data-title="Жилые дома">
+        <img src='dom1.jpg'>
+    </a>
+    <a href="banya.html" data-title="Бани и сауны">
+		<img src='ban1.jpg'>
+    </a>
+    <a href="bas.html" data-title="Басейны">
+        <img src='bas1.png'>
+    </a>
+    <a href="sarai.html" data-title="Хозяйственные постройки">
+        <img src='sar1.jpg'>
+    </a>
+    <a href="garazh.html" data-title="Гаражи">
+        <img src='gar1.jpg'>
+    </a>
+    <a href="teplica.html" data-title="Теплицы">
+        <img src='tep1.jpeg'>
+    </a>
+</div>
+    <footer>
+        <div class="contacts">
+            <div class="contact-item">
+                <strong>Телефон:</strong> +7 (917) 853-52-30
+
+            <div class="contact-item">
+                <strong>Email:</strong> info@trebricon.ru
+            </div>
+            <div class="contact-item">
+                <strong>Адрес:</strong> г. Москва, ул. Бутлерова, 3
+            </div>
+        </div>
+        <div class="copyright">
+            © 2023 TreBriCon. Все права защищены.
+        </div>
+    </footer>
+
+<script>
+if ('serviceWorker' in navigator) {
+  window.addEventListener('load', function() {
+    navigator.serviceWorker.register('serviceworker.js')
+      .then(function(registration) {
+        console.log('ServiceWorker успешно зарегистрирован: ', registration.scope);
+      })
+      .catch(function(err) {
+        console.log('Ошибка регистрации ServiceWorker: ', err);
+      });
+  });
+}
+</script>
 </body>
 </html>
