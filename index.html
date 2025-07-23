@@ -4,6 +4,11 @@
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <link rel="stylesheet" href="styles.css" />
 <link rel="manifest" href="/manifest.json">
+<!-- Добавляем meta-тег для работы в автономном режиме -->
+<meta name="theme-color" content="#ffffff"/>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-capable" content="yes">
 </head>
 
 <body background="fon1.jpg" style="background-size: 100% 100%;">
@@ -51,20 +56,18 @@
         </div>
     </footer>
 
-
- <script>
-       if ('serviceWorker' in navigator) {
-         window.addEventListener('load', function () {
-           navigator.serviceWorker
-             .register('serviceworker.js')
-             .then(function (reg) {
-               console.log('ServiceWorkerзарегистрирован: ', reg.scope);
-             })
-             .catch(function (err) {
-               console.log('Ошибка регистрацииServiceWorker: ', err);
-             });
-         });
-       }
-     </script>
+<script>
+if ('serviceWorker' in navigator) {
+  window.addEventListener('load', function() {
+    navigator.serviceWorker.register('serviceworker.js')
+      .then(function(registration) {
+        console.log('ServiceWorker успешно зарегистрирован: ', registration.scope);
+      })
+      .catch(function(err) {
+        console.log('Ошибка регистрации ServiceWorker: ', err);
+      });
+  });
+}
+</script>
 </body>
 </html>
